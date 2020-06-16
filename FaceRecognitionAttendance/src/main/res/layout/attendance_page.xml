@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="1000dp"
+        android:layout_height="800dp" />
+
+    <Button
+        android:id="@+id/Capture"
+        android:layout_width="280dp"
+        android:layout_height="800dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="50dp"
+        android:onClick="Capture"
+        android:text="Capture" />
+
+</RelativeLayout>

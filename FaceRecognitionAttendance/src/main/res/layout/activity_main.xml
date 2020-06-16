@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huang.frattendance.MainActivity">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginStart="144dp"
+            android:onClick="AttendancePage"
+            android:text="Take Attendance"
+            android:textSize="35dp"
+            tools:layout_editor_absoluteX="900dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/button6"
+            android:layout_alignStart="@+id/button6"
+            android:layout_alignTop="@+id/button2"
+            android:onClick="ManagerLogin"
+            android:text="Manager LogIn"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="900dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_toLeftOf="@+id/Administrator"
+            android:layout_toStartOf="@+id/Administrator"
+            android:onClick="EmployeeLogin"
+            android:text="Employee LogIn"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="1050dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/homepage" />
+
+        <Button
+            android:id="@+id/Administrator"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:onClick="AdminLogin"
+            android:text="Administrator Login"
+            android:textSize="20dp" />
+
+
+</RelativeLayout>

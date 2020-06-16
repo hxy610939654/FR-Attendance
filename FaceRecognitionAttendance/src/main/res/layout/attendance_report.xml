@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:text="Attendance Report"
+        android:textAllCaps="true"
+        android:textSize="50dp"/>
+
+    <Button
+        android:id="@+id/CMAall"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="23dp"
+        android:text="General Report For Current Month"
+        android:layout_marginStart="106dp"
+        android:textAllCaps="false"
+        android:onClick="CMAall"
+        android:layout_below="@+id/ATRsearch"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/PMAall"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:onClick="PMAall"
+        android:text="General Report For Last Month"
+        android:layout_below="@+id/CMAall"
+        android:layout_alignStart="@+id/CMAall" />
+
+    <Button
+        android:id="@+id/PTMAall"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:textAllCaps="false"
+        android:onClick="PTMAall"
+        android:text="General Report For Past Three Month"
+        android:layout_below="@+id/PMAall"
+        android:layout_alignStart="@+id/PMAall" />
+
+    <EditText
+        android:id="@+id/ATRsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:textColor="#8e8e8e"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:maxLines="999999999"
+        android:scrollbars = "vertical"
+        android:id="@+id/ARManager"
+        android:layout_width="700dp"
+        android:layout_height="400dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/ATRsearch"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/CMAe"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:onClick="CMAe"
+        android:text="Current Month Report For search employee"
+        android:layout_alignTop="@+id/CMAall"
+        android:layout_toEndOf="@+id/ARManager"
+        android:layout_marginStart="31dp" />
+
+    <Button
+        android:id="@+id/PMAe"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:onClick="PMAe"
+        android:text="Last Month Report For search employee"
+        android:layout_alignTop="@+id/PMAall"
+        android:layout_alignStart="@+id/CMAe" />
+
+    <Button
+        android:id="@+id/PTMAe"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:onClick="PTMAe"
+        android:text="Past Three Month Report For search employee"
+        android:layout_alignTop="@+id/PTMAall"
+        android:layout_alignStart="@+id/PMAe" />
+
+
+
+</RelativeLayout>

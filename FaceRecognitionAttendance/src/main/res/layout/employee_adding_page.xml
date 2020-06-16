@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Employee Adding"
+        android:textAllCaps="true"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/EID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/EName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/EID"
+        android:layout_alignStart="@+id/EID"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/EPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/EName"
+        android:layout_below="@+id/EName"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/EPassword"
+        android:layout_below="@+id/EPassword"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/Department"
+        android:layout_alignStart="@+id/Department"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/employeeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:textSize="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignBaseline="@+id/EID"
+        android:layout_alignBottom="@+id/EID"
+        android:layout_toStartOf="@+id/EID" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/EName"
+        android:layout_alignBottom="@+id/EName"
+        android:layout_toStartOf="@+id/EID" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/EPassword"
+        android:layout_alignBottom="@+id/EPassword"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department:"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/Department"
+        android:layout_alignBottom="@+id/Department"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignTop="@+id/Position"
+        android:layout_marginTop="11dp"
+        android:text="Position:"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignTop="@+id/EID"
+        android:layout_toEndOf="@+id/textView"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkPicture"
+        android:layout_alignBottom="@+id/checkPicture"
+        android:layout_marginStart="105dp"
+        android:layout_toEndOf="@+id/Position"
+        android:onClick="GetPicture"
+        android:text="Select Picture"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Position"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/checkPicture"
+        android:onClick="Upload"
+        android:text="Upload Picture"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/checkPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/upload"
+        android:layout_alignBottom="@+id/upload"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/button13"
+        android:onClick="CheckPicture"
+        android:text="Check Picture"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:onClick="AddEmployee"
+        android:layout_below="@+id/button13"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/addingMassage"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+
+        android:textSize="25dp"/>
+
+
+</RelativeLayout>

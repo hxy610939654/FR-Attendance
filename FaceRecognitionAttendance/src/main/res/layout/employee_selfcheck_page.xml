@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:text="Self checking"
+        android:textAllCaps="true"
+        android:textSize="50dp"/>
+
+    <TextView
+        android:id="@+id/TVemployee"
+        android:layout_width="700dp"
+        android:layout_height="400dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:text="Self Attendance Report For Current Month"
+        android:layout_marginStart="70dp"
+        android:onClick="ECM"
+        android:textAllCaps="false"
+        android:layout_alignTop="@+id/TVemployee"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="Self Attendance Report For Last Month"
+        android:onClick="EPM"
+        android:layout_below="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:textAllCaps="false"
+        android:onClick="EPTM"
+        android:text="Self Attendance Report For Past Three Month"
+        android:layout_below="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+
+</RelativeLayout>

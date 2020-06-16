@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:text="Delete manager"
+        android:textAllCaps="true"
+        android:textSize="50dp"/>
+
+    <EditText
+        android:id="@+id/ManagerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/aPasswordConfirm"
+        android:layout_alignStart="@+id/aPasswordConfirm"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/aPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:maxLines="999999999"
+        android:scrollbars = "vertical"
+        android:id="@+id/ManagerShow"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_alignTop="@+id/ManagerUsername"
+        android:layout_marginStart="51dp"
+        android:textSize="30dp"
+        android:layout_toEndOf="@+id/ManagerUsername"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ManagerUsername"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_toStartOf="@+id/ManagerUsername"
+        android:text="Manager user name:"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_centerVertical="true"
+        android:text="Admin password confirm:"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aPasswordConfirm"
+        android:layout_marginTop="41dp"
+        android:layout_toStartOf="@+id/ManagerShow"
+        android:onClick="aSearch"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button20"
+        android:layout_alignStart="@+id/aPasswordConfirm"
+        android:onClick="aDelete"
+        android:text="Delete" />
+
+</RelativeLayout>

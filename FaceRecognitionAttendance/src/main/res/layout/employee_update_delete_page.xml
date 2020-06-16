@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:layout_toLeftOf="@+id/check"
+        android:layout_toStartOf="@+id/check"
+        android:text="Employee update and delete"
+        android:textAllCaps="true"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/EID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateMassage"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/previewUpdate"
+        android:layout_toStartOf="@+id/previewUpdate"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/EName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EID"
+        android:layout_alignStart="@+id/EID"
+        android:layout_below="@+id/Search"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/EPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Department"
+        android:layout_alignLeft="@+id/EName"
+        android:layout_alignStart="@+id/EName"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previewUpdate"
+        android:layout_alignLeft="@+id/EPassword"
+        android:layout_alignStart="@+id/EPassword"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/previewUpdate"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EID"
+        android:layout_alignBottom="@+id/EID"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/EID"
+        android:layout_toStartOf="@+id/EID"
+        android:text="ID:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EName"
+        android:layout_alignBottom="@+id/EName"
+        android:layout_alignEnd="@+id/text5"
+        android:layout_alignRight="@+id/text5"
+        android:text="Name:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EPassword"
+        android:layout_alignBottom="@+id/EPassword"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:text="Passowrd:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Department"
+        android:layout_alignBottom="@+id/Department"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:text="Department:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Position"
+        android:layout_alignBottom="@+id/Position"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:text="Position:"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/previewUpdate"
+        android:layout_alignStart="@+id/previewUpdate"
+        android:layout_below="@+id/textView8"
+        android:text="SelectPicture"
+        android:onClick="select"/>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/select"
+        android:layout_alignBottom="@+id/select"
+        android:layout_toEndOf="@+id/select"
+        android:layout_toRightOf="@+id/select"
+        android:text="Check"
+        android:onClick="check"/>
+
+    <Button
+        android:id="@+id/upload2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/check"
+        android:layout_alignBottom="@+id/check"
+        android:layout_toEndOf="@+id/check"
+        android:layout_toRightOf="@+id/check"
+        android:text="Upload"
+        android:onClick="upload"/>
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/TV"
+        android:onClick="M_updateEmployee"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button15"
+        android:layout_alignBottom="@+id/button15"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/button15"
+        android:layout_toRightOf="@+id/button15"
+        android:onClick="DeleteEmployee"
+        android:text="Delete" />
+
+
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/searchButton"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_toLeftOf="@+id/textView7"
+        android:layout_toStartOf="@+id/textView7"
+        android:background="#f0f0f0"
+        android:maxLines="999999999"
+        android:scrollbars="vertical"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/Search"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TV"
+        android:layout_alignStart="@+id/TV"
+        android:layout_alignTop="@+id/text5"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/previewUpdate"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/text5"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Search"
+        android:layout_toEndOf="@+id/Search"
+        android:layout_toRightOf="@+id/Search"
+        android:onClick="Search"
+        android:text="Search"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/updateMassage"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="25dp"/>
+
+
+</RelativeLayout>

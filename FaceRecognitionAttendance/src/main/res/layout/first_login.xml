@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/infrom"
+        android:layout_width="1100dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:text="This is your first time to use this application.
+There is some preparation needs to be done.
+Pleas click the INITIALIZE button to start the work,
+and wait until 'Initialization completed' message comes out.
+It will take only few moment.
+Thank you for your patient."
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/infrom"
+        android:layout_alignStart="@+id/infrom"
+        android:layout_below="@+id/infrom"
+        android:layout_marginLeft="288dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="100dp"
+        android:onClick="createDb"
+        android:text="INITIALIZE"
+        android:textAllCaps="false"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/createAdmin"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/infrom"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/button17"
+        android:layout_toRightOf="@+id/button17"
+        android:onClick="createAdmin"
+        android:text="NEXT"
+        android:textAllCaps="false"
+        android:textSize="40dp" />
+</RelativeLayout>
